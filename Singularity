@@ -36,4 +36,5 @@ From: debian:stretch-slim
   apt-get update
   apt-get install -y --no-install-recommends atom
   apt-get clean
+  sed -i 's/BIG-REQUESTS/_IG-REQUESTS/' /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
   rm -rf /var/lib/apt/lists/*
